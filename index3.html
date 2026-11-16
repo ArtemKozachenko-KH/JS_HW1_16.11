@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>Hello world</div>
+    <script>
+        let number, lvalue = 0;
+        let result = 50;
+        let rvalue = 100;
+        let boolRes = true;
+        let finRes = false;
+        number = parseInt(prompt("Введите число от 1 до 100:", "0"));
+        while (finRes == false) {
+            finRes = confirm("Ваше число это " + result + "?");
+            if (finRes==true){
+                break;
+            }
+
+            boolRes = confirm("Ваше число больше " + result);
+
+
+            if (boolRes == true) {
+                lvalue = result+1;
+
+            }
+            else {
+                rvalue = result-1;
+            }
+            result=parseInt(((rvalue+lvalue)/2));
+        }
+        alert("Число которое вы загадали = " + result);
+    </script>
+</body>
+
+</html>

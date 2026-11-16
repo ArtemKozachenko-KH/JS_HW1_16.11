@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <div>Hello world</div>
+    <script>
+        let name, state, age, gmail = "";
+        do {
+            name = prompt("Введите имя:", "Name");
+            state = prompt("Введите пол:", "Male");
+            age=parseInt(prompt("Введите возраст:", 19));
+            gmail=prompt("Введите почту:", "test@gmail.com");
+
+        }
+        while (confirm("Имя: " + name + "\nПол: " + state + "\nВозраст: " + age + "\nПочта: " + gmail + "\n\nВсе верно?")!= true);
+        alert("Все правильно. Благодарим за предоставленную информацию");
+    </script>
+</body>
+</html>

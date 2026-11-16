@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <div>Hello world</div>
+    <script>
+        let ticket="";
+        let win=false;
+        do {
+            ticket = prompt("Введите номер билета:", "000000");
+            if (parseInt(ticket[0])+parseInt(ticket[1])+parseInt(ticket[2])==parseInt(ticket[3])+parseInt(ticket[4])+parseInt(ticket[5])){
+                win=true;
+            }
+            else{
+                win=false;
+            }
+
+        }
+        while (confirm("Проверить билет?") == false);
+        if (win==true)
+        {
+            alert("You win!!!");
+        }
+        else{
+            alert("You lose!!!");
+        }
+
+    </script>
+</body>
+</html>
